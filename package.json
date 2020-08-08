@@ -8,9 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "bluebird": "^3.7.2",
     "framer-motion": "^2.3.0",
+    "lodash": "^4.17.19",
     "next": "9.5.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-flip-toolkit": "^7.0.12",
+    "react-text-loop": "^2.3.0"
   }
 }

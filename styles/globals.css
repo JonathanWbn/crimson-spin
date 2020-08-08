@@ -10,6 +10,10 @@ button {
   font-family: "Inconsolata", sans-serif;
 }
 
+button:focus {
+  outline: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -17,4 +21,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --primary: #4fc4cf;
+  --secondary: #994ff3;
 }
