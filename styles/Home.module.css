@@ -15,7 +15,7 @@
 
 .button {
   border: 3px solid #4fc4cf;
-  padding: 15px 100px;
+  padding: 15px 120px;
   background-color: #4fc4cf;
   color: white;
   cursor: pointer;
@@ -32,4 +32,28 @@
 .button span {
   font-size: 25px;
   position: absolute;
+  white-space: nowrap;
+}
+
+.populationSelect {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  border: 2px solid #994ff3;
+  background-color: #f2eef5;
+  color: #181818;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.populationSelectRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.populationSelectRow span {
+  margin-right: 30px;
+  font-size: 20px;
+  padding: 5px 10px;
 }
