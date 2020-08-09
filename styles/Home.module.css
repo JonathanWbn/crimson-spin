@@ -6,12 +6,23 @@
   align-items: center;
 }
 
+.nameBox {
+  border: 8px solid transparent;
+}
+
+.nameBoxSelected {
+  border: 8px solid var(--primary);
+  border-radius: 10px;
+}
+
 .rollingName {
   text-align: center;
   color: var(--primary);
   font-weight: 700;
   font-size: 70px;
-  width: 300px;
+  width: 350px;
+  margin: 0;
+  padding: 10px 20px;
 }
 
 .button {

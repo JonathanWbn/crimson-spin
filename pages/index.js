@@ -49,6 +49,8 @@ export default function Home() {
     await delay(1000);
     setRollInterval(250);
     await delay(1000);
+    setRollInterval(9999999999);
+    await delay(500);
     setIsPicked(true);
   }
 
@@ -56,14 +58,10 @@ export default function Home() {
     <div className={styles.container}>
       <TeamSelect population={population} setPopulation={setPopulation} />
       <motion.div
-        animate={isPicked ? "picked" : isClicked ? "clicked" : "default"}
-        variants={{
-          picked: { opacity: 1, scale: 1.5 },
-          clicked: { opacity: 1, scale: 1 },
-          default: { opacity: 0, scale: 1 },
-        }}
+        animate={isClicked ? "clicked" : "default"}
+        variants={{ clicked: { opacity: 1 }, default: { opacity: 0 } }}
         initial="default"
-        style={{ position: "absolute" }}
+        className={isPicked ? styles.nameBoxSelected : styles.nameBox}
       >
         <TextLoop interval={isPicked ? 99999999 : interval}>
           {population.map((name) => (
@@ -75,7 +73,7 @@ export default function Home() {
       </motion.div>
       <motion.button
         animate={isClicked ? "clicked" : "default"}
-        variants={{ clicked: { y: 250 }, default: { y: 0 } }}
+        variants={{ clicked: { y: 180 }, default: { y: -100 } }}
         className={styles.button}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
