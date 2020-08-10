@@ -3,11 +3,11 @@ body {
   background-color: #fffffe;
   padding: 0;
   margin: 0;
-  font-family: "Inconsolata", sans-serif;
+  font-family: 'Inconsolata', sans-serif;
 }
 
 button {
-  font-family: "Inconsolata", sans-serif;
+  font-family: 'Inconsolata', sans-serif;
 }
 
 button:focus {
