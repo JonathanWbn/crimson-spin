@@ -2,7 +2,12 @@ import './globals.css'
 
 import Head from 'next/head'
 
-function MyApp({ Component, pageProps }) {
+interface AppProps {
+  Component: React.FunctionComponent
+  pageProps: object
+}
+
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
