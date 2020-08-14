@@ -107,6 +107,14 @@ export default function Home() {
           Roll the dice!
         </motion.span>
       </motion.button>
+      <a
+        href="https://github.com/JonathanWbn/crimson-spin"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.link}
+      >
+        Check if I'm tweaking the odds.
+      </a>
     </div>
   )
 }
