@@ -20,12 +20,8 @@ export default function TeamSelect({ population, onChange }: TeamSelectProps) {
     }
   }
 
-  const sortedMembers = teamMembers
-    .map((member) => member.name)
-    // sort alphabetically
-    .sort()
-    // move selected members to the top
-    .sort((a, b) => (population.includes(a) && !population.includes(b) ? -1 : 1))
+  const unselectedMemebers = teamMembers.map((member) => member.name).filter((name) => !population.includes(name))
+  const sortedMembers = [...population.sort(), ...unselectedMemebers.sort()]
 
   return (
     <Flipper flipKey={sortedMembers.join('')}>
